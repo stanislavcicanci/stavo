@@ -59,7 +59,7 @@ function Intro() {
           aria-hidden="true"
           className="absolute bottom-20 right-12 w-24 opacity-30"
           animate={{ y: [-6, 6, -6] }}
-          transition={{ repeat: Number.POSITIVE_INFINITY, duration: 6, ease: 'easeInOut' }}
+          transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
         />
         <motion.img
           src={stavoLogo}
@@ -83,7 +83,7 @@ function Intro() {
               className="mr-3 inline-block"
               initial={{ opacity: 0.15, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.55 }}
+              viewport={{ once: true, amount: 0.55 }}
               transition={{ delay: index * 0.06, duration: 0.35 }}
             >
               {word}
